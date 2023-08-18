@@ -1,16 +1,16 @@
 # == Schema Information
 #
-# Table name: users
+# Table name: microposts
 #
 #  id         :integer          not null, primary key
-#  name       :string
-#  email      :string
+#  content    :text
+#  user_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 require "test_helper"
 
-class UserTest < ActiveSupport::TestCase
+class MicropostTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
